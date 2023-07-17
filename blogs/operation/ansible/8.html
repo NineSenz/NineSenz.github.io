@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ansible playbook模块 | deeplearn</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Committed to computer science and software engineering research and learning. ">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.502c3757.css" as="style"><link rel="preload" href="/assets/js/app.394535d1.js" as="script"><link rel="preload" href="/assets/js/3.1cb65ebe.js" as="script"><link rel="preload" href="/assets/js/1.c304d369.js" as="script"><link rel="preload" href="/assets/js/48.221c9a0e.js" as="script"><link rel="prefetch" href="/assets/js/10.1cffc30f.js"><link rel="prefetch" href="/assets/js/11.5d1c1b44.js"><link rel="prefetch" href="/assets/js/12.c76df121.js"><link rel="prefetch" href="/assets/js/13.dc414afc.js"><link rel="prefetch" href="/assets/js/14.1d21819e.js"><link rel="prefetch" href="/assets/js/15.1cc81795.js"><link rel="prefetch" href="/assets/js/16.75848bdb.js"><link rel="prefetch" href="/assets/js/17.32388218.js"><link rel="prefetch" href="/assets/js/18.90b2b9a1.js"><link rel="prefetch" href="/assets/js/19.55e7cfd9.js"><link rel="prefetch" href="/assets/js/20.3864748a.js"><link rel="prefetch" href="/assets/js/21.e22cdd0c.js"><link rel="prefetch" href="/assets/js/22.252481da.js"><link rel="prefetch" href="/assets/js/23.5fc721df.js"><link rel="prefetch" href="/assets/js/24.b0f99ff4.js"><link rel="prefetch" href="/assets/js/25.2d3b4543.js"><link rel="prefetch" href="/assets/js/26.067101c7.js"><link rel="prefetch" href="/assets/js/27.48e9282e.js"><link rel="prefetch" href="/assets/js/28.cd1e9876.js"><link rel="prefetch" href="/assets/js/29.c423ccc4.js"><link rel="prefetch" href="/assets/js/30.2b9021e0.js"><link rel="prefetch" href="/assets/js/31.9c9e9ccf.js"><link rel="prefetch" href="/assets/js/32.6467f20d.js"><link rel="prefetch" href="/assets/js/33.5e358381.js"><link rel="prefetch" href="/assets/js/34.8ead39e6.js"><link rel="prefetch" href="/assets/js/35.758daa12.js"><link rel="prefetch" href="/assets/js/36.50a545c5.js"><link rel="prefetch" href="/assets/js/37.c0ca1639.js"><link rel="prefetch" href="/assets/js/38.e011c7b2.js"><link rel="prefetch" href="/assets/js/39.bd4062c2.js"><link rel="prefetch" href="/assets/js/4.0045585e.js"><link rel="prefetch" href="/assets/js/40.305d0b87.js"><link rel="prefetch" href="/assets/js/41.6a200fec.js"><link rel="prefetch" href="/assets/js/42.d63fd630.js"><link rel="prefetch" href="/assets/js/43.e829a7cb.js"><link rel="prefetch" href="/assets/js/44.cbacae50.js"><link rel="prefetch" href="/assets/js/45.59d0ae2d.js"><link rel="prefetch" href="/assets/js/46.59fdbd4a.js"><link rel="prefetch" href="/assets/js/47.f810e08d.js"><link rel="prefetch" href="/assets/js/49.f639bb49.js"><link rel="prefetch" href="/assets/js/5.eaac0e3b.js"><link rel="prefetch" href="/assets/js/50.40120a5f.js"><link rel="prefetch" href="/assets/js/51.5545c9ff.js"><link rel="prefetch" href="/assets/js/52.8674353e.js"><link rel="prefetch" href="/assets/js/53.d22eb80b.js"><link rel="prefetch" href="/assets/js/54.95d46d44.js"><link rel="prefetch" href="/assets/js/55.f393dc85.js"><link rel="prefetch" href="/assets/js/56.4f99c955.js"><link rel="prefetch" href="/assets/js/57.c09a0a0f.js"><link rel="prefetch" href="/assets/js/58.26b48d47.js"><link rel="prefetch" href="/assets/js/59.eee6b287.js"><link rel="prefetch" href="/assets/js/6.41744d77.js"><link rel="prefetch" href="/assets/js/60.12a320a4.js"><link rel="prefetch" href="/assets/js/61.d79361fa.js"><link rel="prefetch" href="/assets/js/62.9695fd33.js"><link rel="prefetch" href="/assets/js/63.330efc87.js"><link rel="prefetch" href="/assets/js/64.a864efb3.js"><link rel="prefetch" href="/assets/js/65.e7ce327b.js"><link rel="prefetch" href="/assets/js/7.51d6c3a5.js"><link rel="prefetch" href="/assets/js/8.589893b3.js"><link rel="prefetch" href="/assets/js/9.a3db42a7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.502c3757.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>deeplearn</h3> <p class="description" data-v-59e6cb88>Committed to computer science and software engineering research and learning. </p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>NineSenz</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2023
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="deeplearn" class="logo"> <span class="site-name">deeplearn</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客列表
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程/" class="nav-link"><i class="undefined"></i>
+  运维工程
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/IterableObject/1.whatisIterableObject.html" class="nav-link"><i class="undefined"></i>
+  可迭代对象
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Promise/1.html" class="nav-link"><i class="undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Paradigm/1-whatisParadigm.html" class="nav-link"><i class="undefined"></i>
+  函数式编程范式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于我们
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/wangxios" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    NineSenz
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>54</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>11</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      博客列表
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程/" class="nav-link"><i class="undefined"></i>
+  运维工程
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/IterableObject/1.whatisIterableObject.html" class="nav-link"><i class="undefined"></i>
+  可迭代对象
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Promise/1.html" class="nav-link"><i class="undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/docs/Paradigm/1-whatisParadigm.html" class="nav-link"><i class="undefined"></i>
+  函数式编程范式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于我们
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/wangxios" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>ansible playbook模块</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>NineSenz</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2023
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">ansible playbook模块</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>NineSenz</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>6/13/2023</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/blogs/operation/ansible/8.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>Linux</span><span class="tag-item" data-v-8a445198>Ansible</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="一、playbook介绍"><a href="#一、playbook介绍" class="header-anchor">#</a> 一、playbook介绍</h2> <p>playbook(剧本): 是ansible用于配置,部署,和管理被控节点的剧本。</p> <p>参考:https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html</p> <p>使用的格式为<strong>yaml</strong>格式（saltstack,elk,docker等也都会用到yaml格式)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>树明的理解：
+playbook：ansible格式的脚本。将所有需要执行的操作按照ansible的编程语法，放到文件中执行。
+
+playbook替代方案
+1)、完全可以用shell脚本来替代playbook
+    将所有的ansible命令放入脚本    shell脚本中写的是ansible指令
+#!/bin/bash
+for IP in  `seq 201 203`
+   do
+       ansible -m hostname 192.168.98.$IP -a &quot;name=node${IP}&quot;
+done
+    
+2)、ansible+shell脚本  使用script模块
+ansible -m script group2 '/etc/ansible/srcipts/nginx_install.sh'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="_1-1、yaml格式规则"><a href="#_1-1、yaml格式规则" class="header-anchor">#</a> 1.1、YAML格式规则</h3> <ul><li>文件的第一行以 &quot;—&quot;开始，表明YMAL文件的开始.</li> <li>以#号开头为注释</li> <li>列表中的所有成员都开始于相同的缩进级别, 并且使用一个 <code>&quot;- &quot;</code> 作为开头(一个横杠和一个空格)</li> <li>一个字典是由一个简单的 <code>键: 值</code> 的形式组成(这个冒号后面必须是一个空格)</li> <li><strong>注意: 写这种文件不要使用tab键，都使用空格</strong></li></ul> <p>参考: https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#yaml-syntax</p> <p>下面看一个官方的示例感受一下</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>---
+# 一位职工记录
+name: Example Developer
+job: Developer
+skill: Elite
+employed: True
+foods:
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+languages:
+    ruby: Elite
+    python: Elite
+    dotnet: Lame
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="playbook实例"><a href="#playbook实例" class="header-anchor">#</a> playbook实例</h3> <p>先直接来看一个实例 apache安装及业务初始化</p> <p><strong>第1步: 创建一个存放playbook的目录(路径自定义)</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@manage01 ~]# mkdir -p /etc/ansible/playbook/web
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>第2步: 准备httpd配置文件,并修改成你想要的配置</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@manage01 ~]#  yum install httpd -y
+
+按需要修改你想要的配置(为了测试可以随意改动标记一下)
+[root@manage01 ~]#  vim /etc/httpd/conf/httpd.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>第3步: 写一个playbook文件(后缀为.yml或.yaml)</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@manage01 web]# cat apache.yaml 
+---
+- hosts: group1
+  remote_user: root
+  vars:
+    - user: zutuanxue
+  tasks:
+    - name: create user use variable
+      user: user=zutuanxue state=present
+
+    - name: install httpd server
+      yum: name={{item}} state=latest
+      with_items:
+        - httpd
+        - httpd-devel
+
+    - name: start httpd service
+      service: name=httpd state=started enabled=yes
+
+    - name: copy httpd.conf to group1:/etc/httpd/conf/
+      copy: src=/etc/ansible/playbook/web/httpd.conf dest=/etc/httpd/conf
+      notify:
+        - restart httpd service
+
+  handlers:
+       - name: restart httpd service
+         service: name=httpd state=restarted
+         
+         
+         
+#tasks
+#1、创建apache管理用户
+#2、安装httpd
+#3、服务启动管理
+#4、拷贝配置文件，业务初始化
+   #5、触发重启服务httpd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>第4步: 执行写好的palybook</p> <ul><li>会显示出执行的过程，并且执行的每一步都有ok,changed,failed等标识</li> <li>执行如果有错误(failed)会回滚，解决问题后，直接再执行这条命令即可,并会把failed改为changed（幂等性)</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@manage01 web]# ansible-playbook /etc/ansible/playbook/web/apache.yaml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_1-2、playbook常见语法"><a href="#_1-2、playbook常见语法" class="header-anchor">#</a> 1.2、Playbook常见语法</h3> <p><strong>hosts:</strong> 用于指定要执行任务的主机，其可以是一个或多个由冒号分隔主机组.</p> <p><strong>remote_user:</strong> 用于指定远程主机上的执行任务的用户.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- hosts: group1			
+  remote_user: root	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>tasks:</strong> 任务列表, 按顺序执行任务.</p> <ul><li>如果一个host执行task失败, 整个tasks都会回滚, 修正playbook 中的错误, 然后重新执行即可.</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>tasks:
+  - name: create user use variable
+    user: name={{user}} state=present
+
+  - name: install httpd server
+    yum: name=httpd state=latest name=httpd-devel state=latest
+
+  - name: start httpd service
+    service: name=httpd state=started enabled=yes
+
+  - name: copy httpd.conf to group1:/etc/httpd/conf/
+    copy: src=/opt/httpd.conf dest=/etc/httpd/conf/
+    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><strong>handlers:</strong> 类似task，但需要使用notify通知调用，实现按需调用。</p> <ul><li>不管有多少个通知者进行了notify，等到play中的所有task执行完成之后，handlers也只会被执行一次.</li> <li>handlers最佳的应用场景是用来重启服务,或者触发系统重启操作.除此以外很少用到了.</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>    notify:
+    - restart httpd service
+    
+  handlers:
+    - name: restart httpd service
+      service: name=httpd state=restarted
+      
+  #注意: handlers 需要notify调用，他和tasks不同的是  tasks每次都会调用，heandlers触发才调用，比如配置文件修改了，在执行playbook的时候，就会将管理机上的新改的copy到被管理机，那么就会触发headlers重启服务，否则不会执行heanlers
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><strong>练习:</strong> 修改httpd的端口为8080,再执行playbook测试</p> <p><strong>variables:</strong> 变量</p> <ul><li>定义变量可以被多次方便调用</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>vars:
+    - user: zutuanxue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><strong>with_items</strong>: 迭代列表</p> <ul><li>其使用格式为将需要迭代的内容定义为item变量引用，并通过with_items语句指明迭代的元素列表即可。</li></ul> <p>例如安装多个软件包</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>yum: name={{item}} state=latest
+with_items:
+  - httpd
+  - httpd-devel
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>执行后有如下警告</p> <p><img src="https://www.zutuanxue.com:8000/static/media/images/2020/10/6/1601969382005.png" alt="警告.png"></p> <p>解决方法:</p> <p>在/etc/ansible/ansible.cfg配置文件里的[default]配置段下面加上deprecation_warnings=False参数即可</p> <h2 id="二、练习案例"><a href="#二、练习案例" class="header-anchor">#</a> 二、练习案例</h2> <p>写一个playbook实现</p> <ol><li>配置yum</li> <li>安装vsftpd包</li> <li>修改配置文件(要求拒绝匿名用户登录)</li> <li>启动服务并实现vsftpd服务开机自动启动</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>---
+- hosts: group1                 
+  remote_user: root                     
+  tasks:                                
+  - name: rm yum repository      
+    file: path=/etc/yum.repos.d/ state=absent
+    
+  - name: 同步master上的yum源到group1
+    copy: src=/etc/yum.repos.d dest=/etc/
+    
+  - name: ensure vsftpd is at the latest version        
+    yum: name=vsftpd state=latest
+    
+  - name: write the apache config file          
+    copy: src=/etc/vsftpd/vsftpd.conf dest=/etc/vsftpd/vsftpd.conf 
+    
+    notify:                             
+    - restart vsftpd
+    
+  - name: ensure vsftpd is running (and enable it at boot)
+    service: name=vsftpd state=started enabled=yes
+    
+  handlers:                     
+    - name: restart vsftpd              
+      service: name=vsftpd state=restarted
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">编辑时间: </span> <span class="time">7/18/2023, 4:13:51 AM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/blogs/operation/ansible/8.html#一、playbook介绍" class="sidebar-link reco-side-一、playbook介绍" data-v-b57cc07c>一、playbook介绍</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/operation/ansible/8.html#_1-1、yaml格式规则" class="sidebar-link reco-side-_1-1、yaml格式规则" data-v-b57cc07c>1.1、YAML格式规则</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/operation/ansible/8.html#playbook实例" class="sidebar-link reco-side-playbook实例" data-v-b57cc07c>playbook实例</a></li><li class="level-3" data-v-b57cc07c><a href="/blogs/operation/ansible/8.html#_1-2、playbook常见语法" class="sidebar-link reco-side-_1-2、playbook常见语法" data-v-b57cc07c>1.2、Playbook常见语法</a></li><li class="level-2" data-v-b57cc07c><a href="/blogs/operation/ansible/8.html#二、练习案例" class="sidebar-link reco-side-二、练习案例" data-v-b57cc07c>二、练习案例</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/assets/js/app.394535d1.js" defer></script><script src="/assets/js/3.1cb65ebe.js" defer></script><script src="/assets/js/1.c304d369.js" defer></script><script src="/assets/js/48.221c9a0e.js" defer></script>
+  </body>
+</html>
